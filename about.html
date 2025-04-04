@@ -41,6 +41,30 @@
             width: 100%;
             height: 100%;
         }
+        .separator {
+            display: flex;
+            justify-content: center; /* Centra las líneas horizontalmente */
+            gap: 2rem; /* Separación de 2rem entre las líneas */
+            margin-top: 3rem; /* Espacio superior */
+        }
+        .line {
+            width: 30%; /* Cada línea ocupa el 30% del ancho del contenedor */
+            height: 2px; /* Altura de la línea */
+            background: #DA9F5B; /* Color de la línea */
+        }
+
+        /* Responsividad para pantallas más pequeñas */
+        @media (max-width: 768px) {
+            .line {
+                width: 45%; /* En pantallas más pequeñas, las líneas ocupan el 45% del contenedor */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .line {
+                width: 60%; /* En pantallas muy pequeñas, las líneas ocupan el 60% del contenedor */
+            }
+        }
     </style>
 </head>
 
@@ -58,7 +82,7 @@
                 <div class="navbar-nav ml-auto p-4">
                     <a href="index.html" class="nav-item nav-link">Home</a>
                     <a href="about.html" class="nav-item nav-link active">Unidad-1</a>
-                    <a href="service.html" class="nav-item nav-link">Unidad-2</a>
+                    <!-- <a href="service.html" class="nav-item nav-link">Unidad-2</a>
                     <a href="menu.html" class="nav-item nav-link">Unidad-3</a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
@@ -66,7 +90,7 @@
                             <a href="testimonial.html" class="dropdown-item">Testimonial</a>
                         </div>
                     </div>
-                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a> -->
                 </div>
             </div>
         </nav>
@@ -95,15 +119,16 @@
                 <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Unidad-1</h4>
                 <h1 class="display-4">Contenido del derecho del trabajo</h1>
             </div>
+            <div>
+                <h3 class="mb-3">Un Siglo de Cambios: El Derecho al Trabajo en Argentina, entre Avances y Retrocesos</h3>
+                <h5>El derecho al trabajo en Argentina ha tenido un recorrido complejo a lo largo del siglo XX y lo que va del XXI, marcado por avances significativos en la protección de los derechos laborales y, posteriormente, por procesos de desregulación que han generado un intenso debate.</h5>
+            </div> 
             <div class="row">
-                <div class="py-0 py-lg-5">
-                    <h1 class="mb-3">Un Siglo de Cambios: El Derecho al Trabajo en Argentina, entre Avances y Retrocesos</h1>
-                    <h5>El derecho al trabajo en Argentina ha tenido un recorrido complejo a lo largo del siglo XX y lo que va del XXI, marcado por avances significativos en la protección de los derechos laborales y, posteriormente, por procesos de desregulación que han generado un intenso debate.</h5>
-                </div> 
+                
                 <div class="col-lg-4 py-0 py-lg-5">
                     <h3 class="mb-3">De las primeras protecciones a la consolidación constitucional:</h3>
-                    <p>Los inicios del siglo XX vieron el surgimiento de las primeras leyes laborales, con medidas protectoras como la limitación de la jornada laboral, la regulación del trabajo infantil y femenino, y la protección contra accidentes laborales. Se sentaron las bases para un salario vital y un sistema rudimentario de jubilaciones y pensiones. La sanción de leyes que prohibían el trabajo dominical y regulaban el trabajo de menores y mujeres marcó un hito en la protección de los trabajadores.</p>
-                    <p> El período peronista significó un punto de inflexión. Se impulsó una concepción social del trabajo, fortaleciendo los sindicatos y elevando el derecho al trabajo a rango constitucional en 1949. Esta reforma constitucional incorporó derechos fundamentales como la retribución justa, la capacitación, condiciones dignas de trabajo, la salud, el bienestar familiar, la seguridad social y la libertad sindical.</p>
+                    <p> <b>Los inicios del siglo XX vieron el surgimiento de las primeras leyes laborales, con medidas protectoras como la limitación de la jornada laboral, la regulación del trabajo infantil y femenino, y la protección contra accidentes laborales. Se sentaron las bases para un salario vital y un sistema rudimentario de jubilaciones y pensiones. La sanción de leyes que prohibían el trabajo dominical y regulaban el trabajo de menores y mujeres marcó un hito en la protección de los trabajadores.</b></p>
+                    <p> <b>El período peronista significó un punto de inflexión. Se impulsó una concepción social del trabajo, fortaleciendo los sindicatos y elevando el derecho al trabajo a rango constitucional en 1949. Esta reforma constitucional incorporó derechos fundamentales como la retribución justa, la capacitación, condiciones dignas de trabajo, la salud, el bienestar familiar, la seguridad social y la libertad sindical.</b></p>
                     <!-- <a href="" class="btn btn-secondary font-weight-bold py-2 px-4 mt-2">Learn More</a> -->
                 </div>
                 <div class="col-lg-4 py-5 py-lg-0" style="min-height: 500px;">
@@ -113,8 +138,8 @@
                 </div>
                 <div class="col-lg-4 py-0 py-lg-5">
                     <h3 class="mb-3">Desregulación y el desafío actual:</h3>
-                    <p>A pesar de la incorporación del artículo 14 bis en 1957, que reafirmó los derechos del trabajador tras la derogación de la Constitución de 1949, la década de 1990 marcó un giro hacia la desregulación. Se modificaron leyes clave, impactando en el régimen indemnizatorio, el sistema de accidentes de trabajo, y generando un clima de flexibilización laboral.</p>
-                    <p>Hoy, las propuestas de Javier Milei plantean un nuevo escenario. Sus reformas, que buscan una mayor desregulación y una menor intervención del Estado, generan un debate crucial sobre el futuro del derecho al trabajo en Argentina. La controversia se centra en el equilibrio entre la flexibilidad del mercado laboral y la protección de los derechos de los trabajadores, con el riesgo de una mayor precarización laboral y una limitación de la negociación colectiva.</p>
+                    <p><b>A pesar de la incorporación del artículo 14 bis en 1957, que reafirmó los derechos del trabajador tras la derogación de la Constitución de 1949, la década de 1990 marcó un giro hacia la desregulación. Se modificaron leyes clave, impactando en el régimen indemnizatorio, el sistema de accidentes de trabajo, y generando un clima de flexibilización laboral.</b></p>
+                    <p><b>Hoy, las propuestas de Javier Milei plantean un nuevo escenario. Sus reformas, que buscan una mayor desregulación y una menor intervención del Estado, generan un debate crucial sobre el futuro del derecho al trabajo en Argentina. La controversia se centra en el equilibrio entre la flexibilidad del mercado laboral y la protección de los derechos de los trabajadores, con el riesgo de una mayor precarización laboral y una limitación de la negociación colectiva.</b></p>
                     <!-- <h5 class="mb-3"><i class="fa fa-check text-primary mr-3"></i>Lorem ipsum dolor sit amet</h5>
                     <h5 class="mb-3"><i class="fa fa-check text-primary mr-3"></i>Lorem ipsum dolor sit amet</h5>
                     <h5 class="mb-3"><i class="fa fa-check text-primary mr-3"></i>Lorem ipsum dolor sit amet</h5>
@@ -123,17 +148,26 @@
             </div>
             <div>
                 <h3>Un futuro incierto:</h3>
-                <p>El camino recorrido por la legislación laboral argentina muestra una tensión constante entre la búsqueda de un mercado laboral dinámico y la necesidad de proteger los derechos de los trabajadores. El debate actual, en torno a las propuestas de Milei, pone de manifiesto la importancia de encontrar un punto de equilibrio que garantice tanto la competitividad como la justicia social. El futuro del derecho al trabajo en Argentina dependerá de la capacidad de construir un consenso que proteja a los trabajadores sin obstaculizar el desarrollo económico.</p>
-                <p>  <b>#derechoaltrabajo #legislaciónlaboral #Argentina #historia #reformas #desregulación #Milei</b>
-                </p>
-                <h5>El siguiente Video resume la evolución del derecho del trabajo argentino desde 1905, destacando leyes clave como el descanso dominical, la regulación del trabajo de la mujer, entre otros…</h5>
+                <p><b>El camino recorrido por la legislación laboral argentina muestra una tensión constante entre la búsqueda de un mercado laboral dinámico y la necesidad de proteger los derechos de los trabajadores. El debate actual, en torno a las propuestas de Milei, pone de manifiesto la importancia de encontrar un punto de equilibrio que garantice tanto la competitividad como la justicia social. El futuro del derecho al trabajo en Argentina dependerá de la capacidad de construir un consenso que proteja a los trabajadores sin obstaculizar el desarrollo económico.</b></p>
+                <h5>  <b>#derechoaltrabajo #legislaciónlaboral #Argentina #historia #reformas #desregulación #Milei</b>
+                </h5>
+                <div class="separator">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <div class="my-4">
+                    <p><b>El siguiente <span class="btn-primary">Video</span> resume la evolución del derecho del trabajo argentino desde 1905, destacando leyes clave como el descanso dominical, la regulación del trabajo de la mujer, entre otros… </b></p>
+                </div>
             </div>
 
             <div class="video-container">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/IAhGm9zMVVo?si=k_dZccxy5e-B-_hz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
+            <div class="my-4">
              <a href="https://www.ft-ci.org/La-lucha-de-Kraft-Foods" class="btn btn-primary font-weight-bold py-2 px-4 mt-2">La lucha de Kraft Foods</a>
-                
+           
+            </div>
         </div>
     </div>
     <!-- About End -->
