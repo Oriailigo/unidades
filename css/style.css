@@ -9653,3 +9653,33 @@ h6,
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+/* niños trabajando */
+.school-frame {
+  background: #fff;
+  border: 4px solid #2e7d32; /* Verde tipo pizarrón */
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.school-frame img {
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.school-frame:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+}
+
+.school-frame:hover img {
+  transform: scale(1.05);
+}
+
+.school-frame figcaption {
+  font-size: 0.9rem;
+  color: #555;
+  font-style: italic;
+}
